@@ -17,10 +17,12 @@ import java.io.IOException;
 public class CustomTypeDeserializer extends AsPropertyTypeDeserializer {
 
 
+    // pouzije konstruktory z parenta
     public CustomTypeDeserializer(JavaType bt, TypeIdResolver idRes, String typePropertyName, boolean typeIdVisible, JavaType defaultImpl) {
         super(bt, idRes, typePropertyName, typeIdVisible, defaultImpl);
     }
 
+    // pouzije konstruktory z parenta
     public CustomTypeDeserializer(AsPropertyTypeDeserializer src, BeanProperty property) {
         super(src, property);
     }

@@ -24,7 +24,7 @@ class DemoApplicationTests {
                    "header" : {
                         "type": "simpleCar"
                    }
-                }      
+                }   
                 """, Response.class);
 
         assertThat(object, instanceOf(Response.class));
@@ -39,8 +39,9 @@ class DemoApplicationTests {
                 {
                    "header" : {
                         "type": "colombo"
-                   }
-                }      
+                   },
+                   "test" : "test"
+                }
                 """, Response.class);
 
         assertThat(object, instanceOf(ColomboResponse.class));
@@ -57,7 +58,7 @@ class DemoApplicationTests {
                    "header" : {
                         "type": "none"
                    }
-                }      
+                }
                 """, Response.class);
 
         } );
@@ -80,7 +81,6 @@ class DemoApplicationTests {
                 """, Response.class);
 
         assertThat(object, instanceOf(CarResponse.class));
-
     }
 
 }

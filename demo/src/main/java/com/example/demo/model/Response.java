@@ -14,7 +14,6 @@ import lombok.NoArgsConstructor;
 @JsonTypeInfo(use = JsonTypeInfo.Id.NONE)
 @JsonTypeResolver(CustomTypeResolver.class)
 public class Response {
-
     private Header header;
 
 }
